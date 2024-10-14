@@ -18,11 +18,9 @@
     <ion-row class="ion-no-padding">
       <ion-col>
         <ion-button
-          fill="clear"
-          (click)="openOnGithub()"
-          class="ion-float-right"
-          >GitHub</ion-button
-        >
+                    fill="clear"
+                    (click)="openOnGithub()"
+                    class="ion-float-right">GitHub</ion-button>
       </ion-col>
     </ion-row>
   </ion-card>
@@ -34,28 +32,28 @@
       <form [formGroup]="formGroup">
         <ion-item>
           <ion-input
-            formControlName="apiKey"
-            label="Api Key"
-            type="text"
-          ></ion-input>
+                     formControlName="apiKey"
+                     label="Api Key"
+                     type="text"></ion-input>
         </ion-item>
         <ion-item>
           <ion-input
-            formControlName="host"
-            label="Host"
-            type="text"
-          ></ion-input>
+                     formControlName="host"
+                     label="Host"
+                     type="text"></ion-input>
         </ion-item>
       </form>
+      <!--
       <ion-button expand="block" (click)="alias()">Alias</ion-button>
-      <ion-button expand="block" (click)="capture()">Capture</ion-button>
       <ion-button expand="block" (click)="flush()">Flush</ion-button>
       <ion-button expand="block" (click)="identify()">Identify</ion-button>
       <ion-button expand="block" (click)="register()">Register</ion-button>
       <ion-button expand="block" (click)="reset()">Reset</ion-button>
       <ion-button expand="block" (click)="screen()">Screen</ion-button>
-      <ion-button expand="block" (click)="setup()">Setup</ion-button>
       <ion-button expand="block" (click)="unregister()">Unregister</ion-button>
+      -->
+      <ion-button expand="block" (click)="setup()">Setup</ion-button>
+      <ion-button expand="block" (click)="capture()">Capture</ion-button>
     </ion-card-content>
   </ion-card>
 </ion-content>
